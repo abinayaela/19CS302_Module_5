@@ -1,26 +1,48 @@
 # EX 23 C program to store and display the name, id, age and salary of an employee using structure(using array of structure).
 ## DATE:
+08.06.2026
 ## AIM:
 To write a C program to store and display the name, id, age and salary of an employee using structure(using array of structure).
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. Start.
+  
+3. Define a variables.
+ 
+5. Write program to to store and display the name, id, age and salary of an employee
+using structure(using array of structure).
 
+7. Read the value using scanf.
+  
+9. Ask the user to make an input.
+    
+11. Print out the answer.
+    
+13. End.  
 ## Program:
 ```
-/*
-C program to store and display the name, id, age and salary of an employee using structure(using array of structure).
-Developed by: 
-RegisterNumber:  
-*/
+#include<stdio.h>
+struct employee
+{
+int id,age,salary;
+char name[30];
+}emp[100];
+int main()
+{
+int i,n;
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+scanf("%d %s %d %d",&emp[i].id,emp[i].name,&emp[i].age,&emp[i].salary);
+}
+printf("Employee Details\n");
+for(i=0;i<n;i++)
+printf("%d %s %d %d\n",emp[i].id,emp[i].name,emp[i].age,emp[i].salary);}
 ```
 
 ## Output:
 
+<img width="1108" height="378" alt="image" src="https://github.com/user-attachments/assets/16d5bb03-06f5-46ce-93fc-ef93b28031b2" />
 
 
 ## Result:
